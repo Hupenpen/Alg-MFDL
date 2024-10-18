@@ -12,11 +12,13 @@ The model achieved an ACC of 0.973, a precision of 0.996, a SN of 0.951, and a F
 ## Requirements
 
 ```
-numpy==1.20.3
-pandas==1.5.3
-scikit_learn==1.3.2
-torch==1.9.0+cu102
-torchvision==0.9.1+cu102
+numpy==1.23.5
+pandas==1.4.4
+matplotlib==3.7.1
+scikit_learn==0.24.2
+torch==1.13.1+cu117
+torchvision==0.14.1+cu117
+
 ```
 
 ## Usage
@@ -42,7 +44,6 @@ run `get_Features/get_ProtAlbert.py` to generate ProtAlbert feature files.
 run `Model_train/Train.py` and `Model_train/Test.py` to obtain the results of the 5-fold CV and independent test set of the model.
 
 ## Acknowledge
-
 
 
 The training and test sets come from DeepAlgPro (DOI: https://doi.org/10.1093/bib/bbad246) .
