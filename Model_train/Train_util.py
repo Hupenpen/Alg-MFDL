@@ -57,8 +57,8 @@ def load_data_csv(pos_path, neg_path):
     data = np.row_stack((pos, neg))
     print("data:", data.shape)
     data_Y, data_X = data[:, 0], data[:, 1:]
-    print("label:", data_Y.shape)  # 标签
-    print("features:", data_X.shape)  # 特征
+    print("label:", data_Y.shape)  
+    print("features:", data_X.shape)  
     return data_Y, data_X
 
 
@@ -82,7 +82,7 @@ def save_ROC_PR(data_y,data_X,model,path1,tag,teortr):
 
     roc_curve_data = pd.DataFrame({'FPR': fpr, 'TPR': tpr})
     roc_curve_data.to_csv(path1+'csv/'+tag+teortr+'_roc.csv', index=False)
-    # 绘制ROC曲线
+ 
     plt.plot(fpr, tpr, color='darkred', label='ROC (AUC = %0.3f)' % auc)
 
     plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
