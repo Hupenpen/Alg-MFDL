@@ -35,7 +35,7 @@ class CNN_Model(nn.Module):
         x1 = self.act(x1)
         x1 = x1.permute(0, 2, 1)
         final_out = x1
-        final_out = self.mlp(final_out)  # MLP分类器
+        final_out = self.mlp(final_out) 
         final_out = torch.squeeze(final_out)
         return final_out
 
