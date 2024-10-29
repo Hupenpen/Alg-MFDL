@@ -9,6 +9,18 @@ The model achieved an ACC of 0.973, a precision of 0.996, a SN of 0.951, and a F
 
 
 
+
+
+
+![flow chart](Alg-MFDL.svg)
+
+
+
+
+
+
+
+
 ## Requirements
 
 ```
